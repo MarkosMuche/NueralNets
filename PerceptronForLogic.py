@@ -25,3 +25,18 @@ print(predict([0,1]))
 print(predict([1,0]))
 print(predict([1,0]))
 
+
+import math
+# Write a function that takes as input a list of numbers, and returns
+# the list of values given by the softmax function.
+def softmax(L):
+    pro=[]
+    denom=0
+    for l in range(len(L)):
+        denom+=math.exp(l)
+    for l in range(len(L)):
+        pro.append(math.exp(l)/denom)
+    return pro
+    pass
+
+
